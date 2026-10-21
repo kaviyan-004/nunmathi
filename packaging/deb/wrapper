@@ -1,0 +1,4 @@
+#!/bin/sh
+# Nunmathi launcher. No arguments (or a capture file) opens the desktop application;
+# analyze / testbed / verify / schema / live / ... run the command-line engine.
+exec /opt/nunmathi/nunmathi "$@"

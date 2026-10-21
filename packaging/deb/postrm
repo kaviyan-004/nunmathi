@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+# per-user data in ~/.local/share/nunmathi belongs to the users and is left alone
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    command -v update-desktop-database >/dev/null 2>&1 && update-desktop-database -q /usr/share/applications || true
+fi
+exit 0

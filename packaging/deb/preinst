@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+# VeilScope 1.0.0 (this product's former name) shipped a web-UI systemd service; make sure it is not left running
+if [ "$1" = "install" ] || [ "$1" = "upgrade" ]; then
+    if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ]; then
+        systemctl disable --now veilscope.service 2>/dev/null || true
+    fi
+fi
+exit 0

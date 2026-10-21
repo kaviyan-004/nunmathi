@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+# analysis store + cached model (the model retrains automatically when missing)
+backend/data/
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+node_modules/
+
+# Build and installer packages (>100MB, cannot be committed to GitHub)
+build/
+dist/
+dist-installers/
+debroot/
+*.deb
+*.exe
+*.log
+
+# Captures
+*.pcap
+*.pcapng
+# small real-capture regression fixtures
+!backend/tests/data/*.pcap
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+

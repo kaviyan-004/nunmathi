@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Nunmathi
+GenericName=IPsec VPN Analyzer
+Comment=Passive, AI-assisted IPsec VPN security analyzer
+Exec=nunmathi %f
+Icon=nunmathi
+Terminal=false
+StartupNotify=true
+Categories=Network;Security;Monitor;
+MimeType=application/vnd.tcpdump.pcap;application/x-pcapng;application/x-pcap;
+Keywords=IPsec;VPN;IKE;ESP;pcap;security;
